@@ -1,0 +1,1 @@
+Provides the classes necessary to create an applet and the classes an applet uses to communicate with its applet context.
