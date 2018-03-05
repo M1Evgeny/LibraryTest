@@ -2,7 +2,7 @@ package by.pvt.library.model;
 
 public class Book {
 	private int id;
-	private String Title;
+	private String title;
 	private int year;
 	private Author author;
 
@@ -13,14 +13,14 @@ public class Book {
 	public Book(int id, String title, int year) {
 		super();
 		this.id = id;
-		Title = title;
+		this.title = title;
 		this.year = year;
 	}
 
 	public Book(int id, String title, int year, Author author) {
 		super();
 		this.id = id;
-		Title = title;
+		this.title = title;
 		this.year = year;
 		this.author = author;
 	}
@@ -34,11 +34,11 @@ public class Book {
 	}
 
 	public String getTitle() {
-		return Title;
+		return title;
 	}
 
 	public void setTitle(String title) {
-		Title = title;
+		this.title = title;
 	}
 
 	public int getYear() {
@@ -58,9 +58,6 @@ public class Book {
 	}
 
 	public String toString() {
-		return String.format("Books title = %s, id = %s, year = %s, %s",
-				getTitle(), getId(), getYear(), author);
-
+		return String.format("Books title = %s, id = %s, year = %s, %s", getTitle(), getId(), getYear(), author);
 	}
-
 }

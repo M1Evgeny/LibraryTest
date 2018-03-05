@@ -40,8 +40,6 @@ public class Author {
 	}
 
 	public String toString() {
-		return String.format("Author id = %s, FirstName = %s, LastName = %s",
-				getId(), getName(), getLastName());
+		return String.format("Author id = %s, FirstName = %s, LastName = %s", getId(), getName(), getLastName());
 	}
-
 }

@@ -15,7 +15,6 @@ public class CityLibraryServiceImpl implements LibraryService {
 		Book[] books = dao.readAll();
 		catalog.setBooks(books);
 		catalog.setTitle("HTP_TAT_&_BOOK_CATALOG");
-
 		return catalog;
 	}
 

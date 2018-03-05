@@ -10,6 +10,7 @@ public class LibrarianMain {
 	public static void main(String[] args) {
 		LibraryService service = new CityLibraryServiceImpl();
 		Catalog booksCatalog = service.getMainCatalog();
+		System.out.println(booksCatalog);
 		viewCatalogInfo(booksCatalog);
 	}
 
@@ -19,3 +20,5 @@ public class LibrarianMain {
 		}
 	}
 }
+
+//TODO в LibraryService осуществляются все действия с каталогом?

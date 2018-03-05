@@ -1,6 +1,8 @@
 package by.pvt.library.model;
 
+import java.text.DateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class Catalog {
 
@@ -43,4 +45,14 @@ public class Catalog {
 		this.createDate = createDate;
 	}
 
+	public String toString() {
+		return String.format("Catalogs title: %s, create date: %s", getTitle(), getDate());
+	}
+
+	// TODO is it the correct way to set date??
+	private String getDate() {
+		DateFormat df = DateFormat.getDateInstance(DateFormat.MEDIUM, new Locale("BY"));
+		return df.format(new Date());
+
+	}
 }
